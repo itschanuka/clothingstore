@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SE VEN</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="announcement-bar">
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="facebook-icon"></i></a>
+            <a href="#" aria-label="Instagram"><i class="instagram-icon"></i></a>
+        </div>
+        <p class="come agian-text">COME AGAIN!</p>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <button class="search-button" aria-label="Search">
+                <i class="search-icon"></i>
+            </button>
+            
+            <a href="/" class="logo">
+                <img src="images/seven.jpg" alt="SE VEN" width="200" height="80">
+            </a>
+
+            <a href="/cart" class="cart-link" aria-label="Shopping cart">
+                <i class="cart-icon"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="size-chart.html">SIZE CHART</a></li>
+            <li><a href="sale.html">SALE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Contact Us</h1>
+
+        <div class="contact-container">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <address>
+                    44,Arethusa Lane<br>
+                    Wellawatta,<br>
+                    colombo 6, Srilanka.
+                </address>
+                <p class="phone">(03) 5561 3968</p>
+                <a href="https://maps.google.com" class="map-link">OPEN IN MAPS</a>
+            </div>
+
+            <!-- Contact Form -->
+            <form class="contact-form" action="/submit-form" method="POST">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Message" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">SEND</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Company Info -->
+            <div class="footer-section">
+                <p>&copy; SE VEN 2024</p>
+                <address>
+                    44,Arethusa Lane
+                    Wellawatta,
+                    colombo 6, Srilanka.
+                </address>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="footer-section">
+                <ul>
+                    <li><a href="/contact">CONTACT US</a></li>
+                    <li><a href="/shipping">SHIPPING & DELIVERY</a></li>
+                    <li><a href="/returns">EXCHANGES & RETURNS</a></li>
+                    <li><a href="/size-guide">SIZING GUIDE</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="footer-section">
+                <h2>Subscribe to our mailing list for 10% off your next order!</h2>
+                <form class="newsletter-form" action="/subscribe" method="POST">
+                    <input type="email" placeholder="Email address" required>
+                    <button type="submit" aria-label="Subscribe">
+                        <i class="arrow-icon"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

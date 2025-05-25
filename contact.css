@@ -1,0 +1,334 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Announcement bar */
+.announcement-bar {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links a {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.afterpay-text {
+    font-size: 14px;
+}
+
+/* Header */
+header {
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    max-width: 200px;
+}
+
+.search-button, .cart-link {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+/* Navigation */
+.main-nav {
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    padding: 15px 0;
+    background: #f8f8f8; /* Classic light grey background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav li {
+    margin: 0 15px;
+}
+
+.main-nav a, .main-nav button {
+    text-decoration: none;
+    color: #000; /* Classic black text color */
+    font-size: 14px;
+    font-weight: bold;
+    background: #e0e0e0; /* Button-like appearance with light grey */
+    border: 1px solid #444;
+    padding: 8px 20px;
+    border-radius: 30px; /* More curved buttons for an attractive style */
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-nav a:hover, .main-nav button:hover {
+    background: #000; /* Change to black on hover */
+    color: #fff; /* Change text color to white on hover */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+.main-nav a::after, .main-nav button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.4s ease;
+    transform: scale(0);
+    transform-origin: center;
+    border-radius: 30px;
+}
+
+.main-nav a:hover::after, .main-nav button:hover::after {
+    transform: scale(1);
+}
+
+.main-nav a:active, .main-nav button:active {
+    transform: translateY(0);
+    background: #333;
+    border-color: #333;
+}
+
+.main-nav button {
+    outline: none;
+}
+
+/* Make buttons stand out on focus */
+.main-nav a:focus, .main-nav button:focus {
+    border-color: #888; /* Highlight on focus */
+    box-shadow: 0 0 5px 2px rgba(136, 136, 136, 0.7);
+}
+
+/* Responsive Design - Adjust margins for smaller screens */
+@media (max-width: 768px) {
+    .main-nav li {
+        margin: 10px 10px;
+    }
+
+    .main-nav a, .main-nav button {
+        font-size: 12px;
+        padding: 6px 15px;
+    }
+}
+
+
+/* Main content */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Contact information */
+.contact-info {
+    flex: 1;
+}
+
+.contact-info address {
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+.phone {
+    margin-bottom: 10px;
+}
+
+.map-link {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #333;
+    padding: 8px 20px;
+    border-radius: 30px; /* Curved button style */
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+.map-link:hover {
+    background: #000; /* Change to black on hover */
+    color: #fff; /* Change text color to white on hover */
+    border-color: #000;
+}
+
+.map-link::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.4s ease;
+    transform: scale(0);
+    transform-origin: center;
+    border-radius: 30px;
+}
+
+.map-link:hover::after {
+    transform: scale(1);
+}
+
+
+/* Contact form */
+.contact-form {
+    flex: 2;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #333;
+    text-decoration: none;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-top: 20px;
+}
+
+.newsletter-form input[type="email"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+}
+
+.newsletter-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav li {
+        margin: 10px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}

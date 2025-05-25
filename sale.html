@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jubilee</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">SE VEN</div>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="size-chart.html">SIZE CHART</a></li>
+                <li><a href="sale.html">SALE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="icons-container">
+                <div class="currency-buttons">
+                    <button class="currency-btn" data-currency="USD">USD</button>
+                    <button class="currency-btn" data-currency="EUR">EUR</button>
+                    <button class="currency-btn" data-currency="LKR">LKR</button>
+                </div>
+                <div class="search-container">
+                    <input type="text" class="search-bar" placeholder="Search...">
+                    <button class="search-button"><i class="search-icon">🔍</i></button>
+                </div>
+                <a href="checkout.html" class="checkout-btn">CHECKOUT</a>
+                <button class="cart-icon-btn">
+                    <i class="cart-icon">🛒</i>
+                </button>
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="container">
+            <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                <ol class="breadcrumb">
+                    <li><a href="/"><strong>Home</strong></a></li>
+                </ol>
+            </nav>
+    
+            <div class="content">
+                <aside class="filters">
+                    <section class="filter-section">
+                        <h2 class="filter-title">COLLECTION</h2>
+                        <ul class="filter-list">
+                            <li><label class="checkbox-label"><input type="checkbox"> Collection 1</label></li>
+                            <li><label class="checkbox-label"><input type="checkbox"> Collection 2</label></li>
+                        </ul>
+                    </section>
+    
+                    <section class="filter-section">
+                        <h2 class="filter-title">AVAILABILITY</h2>
+                        <ul class="filter-list">
+                            <li><label class="checkbox-label"><input type="checkbox"> In stock</label></li>
+                            <li><label class="checkbox-label"><input type="checkbox"> Out of stock</label></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>COLOR</h2>
+                        <div class="color-options">
+                            <button aria-label="Red" style="background-color: red;"></button>
+                            <button aria-label="Pink" style="background-color: pink;"></button>
+                            <button aria-label="Purple" style="background-color: purple;"></button>
+                            <button aria-label="Blue" style="background-color: blue;"></button>
+                            <button aria-label="Gray" style="background-color: gray;"></button>
+                            <button aria-label="Orange" style="background-color: orange;"></button>
+                            <button aria-label="Yellow" style="background-color: yellow;"></button>
+                            <button aria-label="Black" style="background-color: black;"></button>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>STYLE SIZE</h2>
+                        <ul>
+                            <li><label><input type="checkbox"> XS</label></li>
+                            <li><label><input type="checkbox"> S</label></li>
+                            <li><label><input type="checkbox"> M</label></li>
+                            <li><label><input type="checkbox"> L</label></li>
+                            <li><label><input type="checkbox"> XL</label></li>
+                            <li><label><input type="checkbox"> XXL</label></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>PRICE</h2>
+                        <input type="range" min="0" max="20000" step="100">
+                        <div class="price-range">
+                            <span>Rs 0</span>
+                            <span>Rs 20,000</span>
+                        </div>
+                    </section>
+                </aside>
+
+                <div class="product-list">
+                    <div class="product-list-header">
+                        <h1>OFFERS</h1>
+                        <div class="sort-options">
+                            <label>Sort By:</label>
+                            <div class="sort-buttons">
+                                <button onclick="sortBy('newToOld')">Date: New to Old</button>
+                                <button onclick="sortBy('oldToNew')">Date: Old to New</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-grid">
+                        <!-- Product Card 1 -->
+                        <article class="product-card">
+                            <div class="product-image">
+                                <span class="discount-badge">-30%</span>
+                                <span class="stock-badge">In stock</span>
+                                <img src="/images/kahki.jpg" alt="Painted Khaki T-Shirt" width="400" height="400">
+                            </div>
+                            <h2>Painted Khaki T-Shirt</h2>
+                            <div class="product-price">
+                                <span class="original-price">Rs 3,200.00</span>
+                                <span class="discounted-price">Rs 2,303.00</span>
+                            </div>
+                            <div class="size-options">
+                                <button>XS</button>
+                                <button>S</button>
+                                <button>M</button>
+                            </div>
+                            <p class="installment-info">or 3 installments of Rs 767.66 with Mint Pay</p>
+                        </article>
+
+                        <!-- Product Card 2 -->
+                        <article class="product-card">
+                            <div class="product-image">
+                                <span class="discount-badge">-30%</span>
+                                <span class="stock-badge">In stock</span>
+                                <img src="/images/hey.jpg" alt="Hey Boo Mustard T-Shirt" width="400" height="400">
+                            </div>
+                            <h2>Hey Boo Mustard T-Shirt</h2>
+                            <div class="product-price">
+                                <span class="original-price">Rs 3,200.00</span>
+                                <span class="discounted-price">Rs 2,303.00</span>
+                            </div>
+                            <div class="size-options">
+                                <button>XS</button>
+                                <button>S</button>
+                                <button>M</button>
+                            </div>
+                            <p class="installment-info">or 3 installments of Rs 767.66 with Mint Pay</p>
+                        </article>
+
+                        <!-- Product Card 3 -->
+                        <article class="product-card">
+                            <div class="product-image">
+                                <span class="discount-badge">-30%</span>
+                                <span class="stock-badge">In stock</span>
+                                <img src="/images/gray.jpg" alt="Fun Street Grey T-Shirt" width="400" height="400">
+                            </div>
+                            <h2>Fun Street Grey T-Shirt</h2>
+                            <div class="product-price">
+                                <span class="original-price">Rs 3,200.00</span>
+                                <span class="discounted-price">Rs 2,303.00</span>
+                            </div>
+                            <div class="size-options">
+                                <button>XS</button>
+                                <button>S</button>
+                                <button>M</button>
+                            </div>
+                            <p class="installment-info">or 3 installments of Rs 767.66 with Mint Pay</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main> 
+
+    <script>
+        // Set default currency to LKR
+        let selectedCurrency = 'LKR';
+    
+        // Define exchange rates relative to LKR
+        const exchangeRates = {
+            'USD': 0.003, // Example rate: 1 LKR = 0.003 USD
+            'EUR': 0.0027, // Example rate: 1 LKR = 0.0027 EUR
+            'LKR': 1 // Base rate
+        };
+    
+        document.querySelectorAll('.currency-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                // Remove active class from all buttons
+                document.querySelectorAll('.currency-btn').forEach(btn => btn.classList.remove('active'));
+    
+                // Add active class to the selected button
+                this.classList.add('active');
+    
+                // Update the selected currency
+                selectedCurrency = this.getAttribute('data-currency');
+    
+                // Call function to update all displayed prices
+                updateCurrencyLabels(selectedCurrency);
+            });
+        });
+    
+        function updateCurrencyLabels(currency) {
+            const priceElements = document.querySelectorAll('.product-price');
+            priceElements.forEach(priceElement => {
+                const originalPriceElement = priceElement.querySelector('.original-price');
+                const discountedPriceElement = priceElement.querySelector('.discounted-price');
+    
+                // Get the numeric value of the price (in LKR) without currency symbol
+                const originalPriceValueLKR = parseFloat(originalPriceElement.getAttribute('data-original-price'));
+                const discountedPriceValueLKR = parseFloat(discountedPriceElement.getAttribute('data-discounted-price'));
+    
+                // Convert prices to selected currency
+                const conversionRate = exchangeRates[currency];
+                const convertedOriginalPrice = (originalPriceValueLKR * conversionRate).toFixed(2);
+                const convertedDiscountedPrice = (discountedPriceValueLKR * conversionRate).toFixed(2);
+    
+                // Update the displayed price with the new currency symbol
+                switch (currency) {
+                    case 'USD':
+                        originalPriceElement.textContent = `$ ${convertedOriginalPrice}`;
+                        discountedPriceElement.textContent = `$ ${convertedDiscountedPrice}`;
+                        break;
+                    case 'EUR':
+                        originalPriceElement.textContent = `€ ${convertedOriginalPrice}`;
+                        discountedPriceElement.textContent = `€ ${convertedDiscountedPrice}`;
+                        break;
+                    case 'LKR':
+                        originalPriceElement.textContent = `Rs ${convertedOriginalPrice}`;
+                        discountedPriceElement.textContent = `Rs ${convertedDiscountedPrice}`;
+                        break;
+                }
+            });
+        }
+    
+        // Initial setup to add data attributes for original price values in LKR
+        document.addEventListener('DOMContentLoaded', function () {
+            const priceElements = document.querySelectorAll('.product-price');
+            priceElements.forEach(priceElement => {
+                const originalPriceElement = priceElement.querySelector('.original-price');
+                const discountedPriceElement = priceElement.querySelector('.discounted-price');
+    
+                // Store original prices in LKR in data attributes for reference
+                originalPriceElement.setAttribute('data-original-price', '3200'); // Original price in LKR
+                discountedPriceElement.setAttribute('data-discounted-price', '2303'); // Discounted price in LKR
+            });
+    
+            // Initially update prices to LKR
+            updateCurrencyLabels('LKR');
+        });
+    </script>
+    
+</body>
+</html>

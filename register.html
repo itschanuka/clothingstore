@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Jubilee</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">JUBILEE //</div>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="size-chart.html">SIZE CHART</a></li>
+                <li><a href="sale.html">SALEY</a></li>
+                <li><a href="contact.html">ABOUT</a></li>
+            </ul>
+            <div class="icons">
+                <select class="currency-selector">
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="lkr">LKR</option>
+                </select>
+                <input type="text" class="search-bar" placeholder="Search...">
+                <i class="search-icon">🔍</i>
+                <a href="register.html" class="register-btn">REGISTER</a>
+                <a href="checkout.html" class="checkout-btn">CHECKOUT</a>
+                <i class="cart-icon">🛒</i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Create an Account</h2>
+            <form id="register-form" action="register-action.php" method="POST">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password-field">
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        <button type="button" id="toggle-password" class="password-toggle">👁️</button>
+                    </div>
+                    <div id="password-strength" class="password-strength"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn">REGISTER</button>
+                </div>
+            </form>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="newsletter">
+                <h3>NEWS & UPDATES</h3>
+                <p>Enter your email to receive a 15% code for your first purchase</p>
+                <form action="save_email.php" method="POST">
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <button type="submit">➔</button>
+                </form>
+            </div>
+            <div class="help-links">
+                <h3>HELP</h3>
+                <ul>
+                    <li><a href="size-guide.html">SIZE GUIDE</a></li>
+                    <li><a href="terms.html">TERMS</a></li>
+                    <li><a href="shipping-info.html">SHIPPING INFO</a></li>
+                    <li><a href="contact-us.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="register.js"></script>
+</body>
+</html>
