@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jubilee</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">SE VEN</div>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="size-chart.html">SIZE CHART</a></li>
+                <li><a href="Sale.html">SALE</a></li>
+                <li><a href="contact.html">ABOUT</a></li>
+            </ul>
+            <div class="icons">
+                <select class="currency-selector">
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="lkr">LKR</option>
+                </select>
+                <input type="text" class="search-bar" placeholder="Search...">
+                <i class="search-icon">🔍</i>
+                <a href="register.html" class="register-btn">REGISTER</a>
+                <a href="checkout.html" class="checkout-btn">CHECKOUT</a>
+                <i class="cart-icon">🛒</i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="text">
+                <h1>100% SUSTAINABLE</h1>
+                <p>MADE USING ORGANIC COTTON<br>TOXIN FREE · RECYCLED FABRICS</p>
+            </div>
+            <div class="image">
+                <img src="models.jpg" alt="Models in sustainable fashion">
+            </div>
+        </div>
+    </main>
+
+    <!-- Collections Section -->
+    <div class="collections-container">
+        <a href="unisex.html">
+            <div class="collection-card">
+                <img src="images/unisex.jpg"alt="Unisex Collection">
+                " alt="Unisex Collection">
+                <div class="collection-overlay">
+                    <h3>UNISEX</h3>
+                </div>
+            </div>
+        </a>
+        <a href="women.html">
+            <div class="collection-card">
+                <img src="images/women.jpg" alt="Women Collection">
+                <div class="collection-overlay">
+                    <h3>WOMEN</h3>
+                </div>
+            </div>
+        </a>
+        <a href="men.html">
+            <div class="collection-card">
+                <img src="images/men.jpg" alt="Men Collection">
+                <div class="collection-overlay">
+                    <h3>MEN</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="newsletter">
+                <h3>NEWS & UPDATES</h3>
+                <p>Enter your email to receive a 15% code for your first purchase</p>
+                <form action="save_email.php" method="POST">
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <button type="submit">➔</button>
+                </form>
+            </div>
+            <div class="help-links">
+                <h3>HELP</h3>
+                <ul>
+                    <li><a href="size-guide.html">SIZE GUIDE</a></li>
+                    <li><a href="terms.html">TERMS</a></li>
+                    <li><a href="shipping-info.html">SHIPPING INFO</a></li>
+                    <li><a href="contact-us.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer> 
+    
+    
+    
+</body>
+</html>
